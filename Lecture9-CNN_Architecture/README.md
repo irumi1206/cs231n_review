@@ -6,11 +6,14 @@
 - 가장 첫번째로 실질적인 결과를 낸 ConvNet
 - digit recognition
 
+
+
 ### AlexNet
 
 - 첫번째로 image classification에 대해서 large, deep 한  network로서 classification을 수행함
 - 2012 에 대회에서 가장 좋은 성능을 보임
 - input image:227*227*3
-- first layer: 96 11*11 stride of 4 convolutional filters => output: 55*55*96
+- first layer : convolutional layer 96 11*11 stride of 4 => output : 55*55*96
+- second layer : pooling layer 3*3 stride of 3 => output : 27*27*96
 - 
 
