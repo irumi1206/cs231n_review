@@ -69,7 +69,7 @@
 - Stochastic Depth : depth에서의 vanishing gradient를 해결하기 위해서, trainging 과정에서 특정 layer들을 drop해서 training할떄읭 model depth를 줄임
 - FractalNet : ResNet에서 벗어나, residual 접근에서 벗어난 새로운 접근방법. shallow and deep path로 모델을 구성
 - DenseNet : Dense block들로 구성되며, input은 모든 dense block의 input들로 들어감 (vanishing gradient을 해결)
-- SqueezeNet : 
+- SqueezeNet : AlexNet 보다 50배 낮은 parameter로 AlexNet과 동일한 성능을 보임
  
 
 
