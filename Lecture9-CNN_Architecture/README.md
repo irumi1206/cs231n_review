@@ -61,8 +61,16 @@
 <br><br><br><br><br>
 
 
-## 
-
+## Other Architectures
+- NIN(Network in Networks) : convolutional layer 뒤에 micro network를 추가해서 abstrack feature를 더 잘 포착하려 함 (여기서 사용한 1*1 conv 개념이 googlenet, ResNet bottleneck에서 사용됨)
+- Improved ResNet from creators of ResNet
+- Wide residual networks : 모델을 deeper하게 만드는 접근과는 다르게, wider layer들로 모델을 구성함
+- ResNeXt : residual block을 parallel한 block으로 구성함
+- Stochastic Depth : depth에서의 vanishing gradient를 해결하기 위해서, trainging 과정에서 특정 layer들을 drop해서 training할떄읭 model depth를 줄임
+- FractalNet : ResNet에서 벗어나, residual 접근에서 벗어난 새로운 접근방법. shallow and deep path로 모델을 구성
+- DenseNet : Dense block들로 구성되며, input은 모든 dense block의 input들로 들어감 (vanishing gradient을 해결)
+- SqueezeNet : 
+ 
 
 
 
