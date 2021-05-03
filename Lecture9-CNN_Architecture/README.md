@@ -33,13 +33,15 @@
 - fully connected layer에 parameter가 많음
 
 
-### GoofLeNet
+### GoogLeNet
 - computation에서 향상을 꾀하고자 함 => Inception module의 도입
 - 22 layers, No fully connected layer, less parameter than VGGNet
 - winner of ILSVRC 2014 classification
 ![image](https://user-images.githubusercontent.com/48700102/116844732-ea031900-ac1e-11eb-9310-e281dda001ba.png)
 - Inception module :Inception modeul을 stacking해서, Network in Networks 의 구조로 모델을 형성하고, 그 안에서 parallel filter operation을 통해서 모델을 구성함
-
+![image](https://user-images.githubusercontent.com/48700102/116845046-b8d71880-ac1f-11eb-82a5-6485bc96efe7.png)
+- Inception module의 문제점 : computational complexity(parallel filter operation을 수행한 뒤, concatenation을 통해서 다음 layer로 전해지는데 operation이 너무 많아짐)
+-  
 
 
 
