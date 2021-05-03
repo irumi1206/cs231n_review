@@ -1,13 +1,13 @@
 # CNN Architecture
 
-### LeNet-5
+## LeNet-5
 ![image](https://user-images.githubusercontent.com/48700102/116843218-3f88f700-ac1a-11eb-87e0-7c9a05a3a941.png)
 - 가장 첫번째로 실질적인 결과를 낸 ConvNet
 - digit recognition
 <br><br><br>
 
 
-### AlexNet
+## AlexNet
 - 첫번째로 image classification에 대해서 large, deep 한  network로서 classification을 수행함
 - ILSVRC2012 에서 가장 좋은 성능을 보임(first deep learning, CNN based winner)
 - 8개의 layer로 구성됨
@@ -22,7 +22,7 @@
 <br><br><br>
 
 
-### VGGNet
+## VGGNet
 - layer의 갯수를 늘리고, convolutional filter size를 줄임 (16~19 layers)
 - 3*3 convolutional filter를 사용
 - why smaller filter size? => small size filter 를 여러개 쌓아서 big size filter의 효과를 낼 수 있으며, fewer parameters, more discriminative decision function
@@ -33,7 +33,7 @@
 <br><br><br>
 
 
-### GoogLeNet
+## GoogLeNet
 - computation에서 향상을 꾀하고자 함 => Inception module의 도입
 - 22 layers, No fully connected layer, less parameter than VGGNet
 - winner of ILSVRC 2014 classification
