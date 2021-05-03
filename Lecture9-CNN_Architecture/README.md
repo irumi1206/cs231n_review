@@ -12,8 +12,13 @@
 
 - 첫번째로 image classification에 대해서 large, deep 한  network로서 classification을 수행함
 - 2012 에 대회에서 가장 좋은 성능을 보임
+- ReLu 함수를 처음으로 사용
+- Dropout 적용
+
+
+![image](https://user-images.githubusercontent.com/48700102/116843585-58de7300-ac1b-11eb-9881-2cc453903b9c.png)
 - input image: 227\*227\*3
 - first layer : convolutional layer 96 11\*11 stride of 4 => output : 55\*55\*96
 - second layer : pooling layer 3\*3 stride of 3 => output : 27\*27\*96
-- 
+- ....
 
