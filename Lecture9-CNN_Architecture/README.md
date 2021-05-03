@@ -43,7 +43,10 @@
 - Inception module의 문제점 : computational complexity(parallel filter operation을 수행한 뒤, concatenation을 통해서 다음 layer로 전해지는데 operation이 너무 많아짐)
 ![image](https://user-images.githubusercontent.com/48700102/116845286-634f3b80-ac20-11eb-95ba-0f4537ffd165.png)
 - Solution : convolutional layer로 들어가기 전에, 1*1 convolutinal layer로 depth를 줄이면 됨
-
+![image](https://user-images.githubusercontent.com/48700102/116845524-0738e700-ac21-11eb-93c5-845930ad2eb0.png)
+- Stem Network - Stack of Inceptoin module - Classifier output(no FC layer)
+- 중간에 Auxiliary classification output이 들어가고, deep network 중간 layer에서 gradient injection을 하기 위해서
+<br><br><br><br><br>
 
 
 
