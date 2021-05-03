@@ -12,7 +12,7 @@
 
 - 첫번째로 image classification에 대해서 large, deep 한  network로서 classification을 수행함
 - ILSVRC2012 에서 가장 좋은 성능을 보임(first deep learning, CNN based winner)
-- 8개의 laye로 구성됨
+- 8개의 layer로 구성됨
 - ReLu 함수 activation function으로 처음으로 사용
 - fully connected layer에서 Dropout 적용
 - AlexNet layer의 특정 layer에서는 두개로 나눠지는데, 당시의 gpu로는 하나로는 모든 parameter를 담을수 없었기에 두개로 나누고, 특정 layer들끼리의 연결을 통해 통신함
@@ -28,4 +28,26 @@
 ### VGGNet
 - layer의 갯수를 늘리고, convolutional filter size를 줄임 (16~19 layers)
 - 3*3 convolutional filter를 사용
-- 
+- why smaller filter size? => small size filter 를 여러개 쌓아서 big size filter의 효과를 낼 수 있으며, fewer parameters, more discriminative decision function
+- ILSVRC2014 에서 2번째로 좋은 성적을 냄
+
+
+![image](https://user-images.githubusercontent.com/48700102/116844093-000fda00-ac1d-11eb-9623-1a23d61d796b.png)
+- 총 138M 의 parameter로 이루어져 있음
+- fully connected layer에 parameter가 많음
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
