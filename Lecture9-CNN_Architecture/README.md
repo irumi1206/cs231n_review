@@ -29,7 +29,7 @@
 - 3*3 convolutional filter를 사용
 - why smaller filter size? => small size filter 를 여러개 쌓아서 big size filter의 효과를 낼 수 있으며, fewer parameters, more discriminative decision function
 - ILSVRC2014 에서 classification에서 2번째로 입상함
-![image](https://user-images.githubusercontent.com/48700102/116844093-000fda00-ac1d-11eb-9623-1a23d61d796b.png)
+<img src="https://user-images.githubusercontent.com/48700102/116844093-000fda00-ac1d-11eb-9623-1a23d61d796b.png" width="70%">
 - 총 138M 의 parameter로 이루어져 있음
 - fully connected layer에 parameter가 많음
 <br><br><br><br><br>
