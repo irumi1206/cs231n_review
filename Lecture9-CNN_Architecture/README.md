@@ -1,7 +1,7 @@
 # CNN Architecture
 
 ## LeNet-5
-![image](https://user-images.githubusercontent.com/48700102/116843218-3f88f700-ac1a-11eb-87e0-7c9a05a3a941.png | width=100)
+![image](https://user-images.githubusercontent.com/48700102/116843218-3f88f700-ac1a-11eb-87e0-7c9a05a3a941.png)
 - 가장 첫번째로 실질적인 결과를 낸 ConvNet
 - digit recognition
 <br><br><br><br><br>
