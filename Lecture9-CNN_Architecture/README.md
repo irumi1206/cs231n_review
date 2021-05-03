@@ -42,21 +42,26 @@
 ![image](https://user-images.githubusercontent.com/48700102/116845046-b8d71880-ac1f-11eb-82a5-6485bc96efe7.png)
 - Inception module의 문제점 : computational complexity(parallel filter operation을 수행한 뒤, concatenation을 통해서 다음 layer로 전해지는데 operation이 너무 많아짐)
 ![image](https://user-images.githubusercontent.com/48700102/116845286-634f3b80-ac20-11eb-95ba-0f4537ffd165.png)
-- Solution : convolutional layer로 들어가기 전에, 1*1 convolutinal layer로 depth를 줄이면 됨
+- Solution : convolutional layer로 들어가기 전에, 1*1 convolutinal layer로 depth를 줄이면 됨(bottleneck layer)
 ![image](https://user-images.githubusercontent.com/48700102/116845524-0738e700-ac21-11eb-93c5-845930ad2eb0.png)
 - 전체적인 구조 : Stem Network - Stack of Inceptoin module - Classifier output(no FC layer)
 - 중간에 Auxiliary classification output이 들어가고, deep network 중간 layer에서 gradient injection을 하기 위해서
 <br><br><br><br><br>
 
+
 ## ResNet
 - ILSVRC 2015 classification winner
 - extreme deep network
-- 계속 layer를 stacking하는 것이 무조건적으로 모델의 학습능력이 향상시키지는 않는다.(overfitting으로 인한 문제가 아님)
+- 계속 layer를 stacking하는 것이 무조건적으로 모델의 학습능력이 향상시키지는 않는다.(overfitting으로 인한 문제가 아님) 의 사실에 착안, 모델을 생성함.
 ![image](https://user-images.githubusercontent.com/48700102/116846118-94307000-ac22-11eb-8376-d05782a2e72f.png)
 - deeper model이 shallower model만큼의 성능이 나와야 되는데 안나옴 -> deeper model에서의 optimization 관점으로 문제를 접근 -> deeper model에서도 shallower model 만큼의 성능을 보이기 위해서 shallow layer에서는 shallow model의 learned layer를 가져오고, deeper layer에서는 identity mapping을 추가하는 방식으로 접근
+- deep layer에서는 H를 직접 학습시키는 어려움-> H=F(x)+x로 나누고, F를 학습 하고자 함
+![image](https://user-images.githubusercontent.com/48700102/116847477-934d0d80-ac25-11eb-8fd0-b5b2fe98198a.png)
+- no FC layer, no dropout
+<br><br><br><br><br>
 
 
-
+## 
 
 
 
