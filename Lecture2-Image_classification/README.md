@@ -1,4 +1,4 @@
-# Lecture 2 - image classification
+# Image classification
 
 ## Image classification
 <br>
