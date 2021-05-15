@@ -6,7 +6,6 @@
 - linear classifier(W) 에대허서 얼마나 잘 분류하는지에 대한 수치화가 필요함
 - loss function: classifier가 얼마나 좋은지에 대해 quantify 함.
 ![image](https://user-images.githubusercontent.com/48700102/118359763-fb093e00-b5bf-11eb-8ba9-cc599434ad8c.png)
-
 - input data(xi) 에 대해서, classifier 로 얻어진 값과 실제로 나와 되는 값(yi) 의 함수로 loss function 을 정의, 각각의 class 에 대한 loss 의 합. total loss(L) 은 각각의 이미지에 대한 loss 의 평균
 <br><br><br>
 
