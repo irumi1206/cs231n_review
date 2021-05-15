@@ -1,6 +1,8 @@
 # Loss Functions and Optimizatoin
 
 ## 1. Loss function
+![image](https://user-images.githubusercontent.com/48700102/118359750-ee84e580-b5bf-11eb-9120-ed58f3280860.png)
+
 <br>
 ![image](https://user-images.githubusercontent.com/48700102/118359711-ba112980-b5bf-11eb-9d8a-865b2a470373.png)
 - linear classifier - 이미지를 픽셀단위로 데이터로 저장, 행렬의 곱셈(W행령)으로 각 class 에 해당하는 점수를 계산해서 분류
