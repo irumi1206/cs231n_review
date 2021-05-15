@@ -10,6 +10,7 @@
 - 순차적으로 함수를 앞쪽으로 진행하면서 함수값들을 계산하고, 최종 함수값에서 뒤로 쫓아가면서 local gradient을 계산하기 때문에 이를 feed-forward, back-propagation 이라고 함.
 ![image](https://user-images.githubusercontent.com/48700102/118359887-63f0b600-b5c0-11eb-8d02-dc5ae11cb7f0.png)
 - back-propagation을 하는 과정에서 위의 그림과 같이 하나의 값이 두개의 노드로 전해지는 경우, back-propagation 을 진행할 때 gradient를 더해주면 된다.
+<br><br><br>
 
 ## Backpropagation in vectorized operations
 ![image](https://user-images.githubusercontent.com/48700102/118359918-736fff00-b5c0-11eb-8294-f6cc4dea4e51.png)
@@ -19,6 +20,7 @@
 - 위와 같이 back-propagrion 이 각각의 element 에 대해서 gradient 를 구하는 방식으로 진행이 된다.
 - 아마 위와 같은 vector operator 도 결국에는 여러가지 scalar operation 으로 나눌 수 있으므로 변환해서 보면 더 편할 수도 있겠다는 생각이 듬. 
 - gradient shape=variable shape 이어야 한다.
+<br><br><br>
 
 ## Neural Network
 ![image](https://user-images.githubusercontent.com/48700102/118359945-87b3fc00-b5c0-11eb-8935-e1c925071a85.png)
