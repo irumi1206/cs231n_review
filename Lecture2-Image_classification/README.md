@@ -1,8 +1,6 @@
 # Image classification
 
 ## Image classification
-<br>
-
 - 컴퓨터의 입장에서 이미지는 rgb 의 수치들로 이루어진 데이터일 뿐이라서, 어려운 과제
 - 같은 object 라도, 다른 포즈, 빛, 대칭, 확대 등을 고려해 이미지 classfication 을 진행해야 됨
 - 특정한 알고리즘이 없음, clear explicit 한 알고리즘이 없어서 어려운 과제
@@ -13,7 +11,6 @@
 
 
 ## Nearest Neighbor
-<br>
 <img src="https://user-images.githubusercontent.com/48700102/118358437-b5497700-b5b9-11eb-8775-3eda5e26da83.png" width="50%" align="middle">
 
 - 가장 가까운 이미지를 이용해서 prediction 을 진행함
@@ -25,8 +22,6 @@
 
 
 ## Hyper parameter
-<br>
-
 - k-nearest neighbor : parameter k, 그리고 distance function에 따라서 모델이 달라짐
 - 최적의 parameter 를 찾아서 학습시켜야함
 <img src="https://user-images.githubusercontent.com/48700102/118358457-c8f4dd80-b5b9-11eb-959f-c736ac2cf312.png" width="50%">
@@ -41,7 +36,6 @@
 
 
 ## Linear Classification
-<br>
 <img src="https://user-images.githubusercontent.com/48700102/118358473-e033cb00-b5b9-11eb-88bd-5e14e950df79.png" width="50%">
 
 - 위식을 통해서 이미지와 W 를 정의해서 각각의 class 별로 점수를 구함
