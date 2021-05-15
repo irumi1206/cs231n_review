@@ -18,6 +18,7 @@
 <br>
 <img src="https://user-images.githubusercontent.com/48700102/116843585-58de7300-ac1b-11eb-9881-2cc453903b9c.png" width="70%">
 <br>
+
 - input image: 227\*227\*3
 - first layer : convolutional layer 96 11\*11 stride of 4 => output : 55\*55\*96
 - second layer : pooling layer 3\*3 stride of 3 => output : 27\*27\*96
