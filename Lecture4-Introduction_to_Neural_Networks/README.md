@@ -3,7 +3,7 @@
 ## Backpropagation in computational graph
 - 어떤 함수든 computational graph로 표현 할 수 있고, 이를 통해 gradient descent 를 back-propagation 과 chain rule를 이용해서 할 수 있음.
 <br>
-<img src="https://user-images.githubusercontent.com/48700102/118359843-43c0f700-b5c0-11eb-8e16-fadb0f919ac8.png" width="50%">
+<img src="https://user-images.githubusercontent.com/48700102/118359843-43c0f700-b5c0-11eb-8e16-fadb0f919ac8.png" width="25%">
 <br>
 
 <br>
