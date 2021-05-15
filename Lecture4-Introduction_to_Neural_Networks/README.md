@@ -1,7 +1,7 @@
 # Introduction to Neural Networks
 
 ## Backpropagation in computational graph
-- 어떤 함수든 computational graph로 표현 할 수 있고, 이를 통해 gradient descent 를 back-propagation 과 편미준에서의 chain rule를 이용해서 쉽게 할 수 있음.
+- 어떤 함수든 computational graph로 표현 할 수 있고, 이를 통해 gradient descent 를 back-propagation 과 chain rule를 이용해서 쉽게 할 수 있음.
 ![image](https://user-images.githubusercontent.com/48700102/118359843-43c0f700-b5c0-11eb-8e16-fadb0f919ac8.png)
 ![image](https://user-images.githubusercontent.com/48700102/118359852-458aba80-b5c0-11eb-8bfe-8edf86fa1ffc.png)
 - 위와 같은 computational graph가 있을떄 현재 함수값들과 local gradient 를 이용해서 각각의 local 변수에 대한 최종 output 의 gradient를 계산할 수 있음.
