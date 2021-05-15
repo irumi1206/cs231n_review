@@ -25,6 +25,7 @@
 
 ## Hyper parameter
 <br>
+
 - k-nearest neighbor : parameter k, 그리고 distance function에 따라서 모델이 달라짐
 - 최적의 parameter 를 찾아서 학습시켜야함
 <img src="https://user-images.githubusercontent.com/48700102/118358457-c8f4dd80-b5b9-11eb-959f-c736ac2cf312.png" width="50%">
