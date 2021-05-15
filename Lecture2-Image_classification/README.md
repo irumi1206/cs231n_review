@@ -4,13 +4,11 @@
 - 컴퓨터의 입장에서 이미지는 rgb 의 수치들로 이루어진 데이터일 뿐이라서, 어려운 과제
 - 같은 object 라도, 다른 포즈, 빛, 대칭, 확대 등을 고려해 이미지 classfication 을 진행해야 됨
 - 특정한 알고리즘이 없음, clear explicit 한 알고리즘이 없어서 어려운 과제
-![image](https://user-images.githubusercontent.com/48700102/118358424-a8c51e80-b5b9-11eb-9802-96cc5d7e6a67.png)
 <img src="https://user-images.githubusercontent.com/48700102/118358424-a8c51e80-b5b9-11eb-9802-96cc5d7e6a67.png" width="70%">
 - 특정한 category 에 대해서 알고리즘을 작성하는 대신 data-driven approach로 접근하는 것이 효율적
 <br><br><br>
 
 ## Nearest Neighbor
-![image](https://user-images.githubusercontent.com/48700102/118358437-b5497700-b5b9-11eb-8775-3eda5e26da83.png)
 <img src="https://user-images.githubusercontent.com/48700102/118358437-b5497700-b5b9-11eb-8775-3eda5e26da83.png" width="70%">
 - 가장 가까운 이미지를 이용해서 prediction 을 진행함
 - 가장 가까운 이미지가 무엇인지에 대한 기준이 필요함 ex) L1 distance, L2 distance
