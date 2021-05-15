@@ -6,9 +6,8 @@
 - 특정한 알고리즘이 없음, clear explicit 한 알고리즘이 없어서 어려운 과제
 ![image](https://user-images.githubusercontent.com/48700102/118358424-a8c51e80-b5b9-11eb-9802-96cc5d7e6a67.png)
 - 특정한 category 에 대해서 알고리즘을 작성하는 대신 data-driven approach로 접근하는 것이 효율적
-<br>
-<br>
-<br>
+<br><br><br>
+
 ## Nearest Neighbor
 ![image](https://user-images.githubusercontent.com/48700102/118358437-b5497700-b5b9-11eb-8775-3eda5e26da83.png)
 - 가장 가까운 이미지를 이용해서 prediction 을 진행함
@@ -16,9 +15,8 @@
 - nearest neighbor classifier : train O(1), predict O(N)
 - Neares neighbor 를 통해서 classify 를 진행할때->하나의 distinct 한 자료 때문에 분류 region 이 들쭉날쭉하게 나옴
 - smooth 한 영역을 도출하기 위해 K-Nearest neighbor 를 사용함
-<br>
-<br>
-<br>
+<br><br><br>
+
 ## Hyper parameter
 - k-nearest neighbor : parameter k, 그리고 distance function에 따라서 모델이 달라짐
 - 최적의 parameter 를 찾아서 학습시켜야함
@@ -28,9 +26,8 @@
 - 주로 크기가 작은 dataset에 대해서는 이런식으로 fold로 나눠서 validation set 을 변경해가면서 training 을 하는 경우도 있음
 - deep learning 에서 큰 dataset 에 대해서 이런 방식은 거의 안쓰임( 비교적 작은 데이터에 대해서만 쓰임)
 - k-nearest neighbor : 이미지에 대해서는 안쓰임( 이미지가 변형 되었을떄 파악하기 쉽지 않고, 차원 에 대해서 지수승으로 필요한 data 가 증가하기 때문에 비효율적임)
-<br>
-<br>
-<br>
+<br><br><br>
+
 ## Linear Classification
 ![image](https://user-images.githubusercontent.com/48700102/118358473-e033cb00-b5b9-11eb-88bd-5e14e950df79.png)
 - 위식을 통해서 이미지와 W 를 정의해서 각각의 class 별로 점수를 구함
