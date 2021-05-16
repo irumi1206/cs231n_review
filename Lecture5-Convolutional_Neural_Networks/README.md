@@ -28,6 +28,43 @@
 <br>
 
 - 1*1 convolutional filter의 중요성 : 1*1 convolutional filter를 사용하게 되면 모든 spatial data를 순회하면서, 차원수를 줄여주는 일종의 abstraction을 적용시킬 수 있다.
+<br><br><br><br><br>
+
+## brain/neuron view of Conv layer
+![image](https://user-images.githubusercontent.com/48700102/118393027-b7720b00-b677-11eb-885b-8009b9877f80.png)
+- Convolutional filter에서 filter size만큼의 receptive field를 통해서 neuron이 activate된다고 볼 수 있다.
+- neuron 입장에서는 data의 spatial structure를 유지한채, neuron에 data가 전해져 온다고 볼 수 있다.
+![image](https://user-images.githubusercontent.com/48700102/118393043-d83a6080-b677-11eb-8958-ebc262be6e78.png)
+- Conv layer가 여러개의 filter로 구성되어 있다면, input data의 같은 region을 보지만, 각 filter 별로 보는 data feature가 달라진다고 볼 수 있다.
+<br><br><br><br><br>
+
+## Pooling layer
+- Pooling layer : 기존 data representation을 좀더 작게 만들며, output data를 작게 만든다.
+![image](https://user-images.githubusercontent.com/48700102/118393167-9cec6180-b678-11eb-9da2-79f63985187a.png)
+- ex) Max-pooling : kernel 상에서 가장 큰 값만을 취하는 pooling layer
+- pooling layer에서는 일종의 down sampling을 하는게 목적이기 때문에, 일반적으로 zero padding을 사용하지 않는다.
+<br><br><br><br><br>
+
+## Fully connected Layer
+- 일반적으로 Convolutional neural Network는 여러개의 ConvNet-Activation layer로 구성되어 있으며, 중간에 Pooling layer가 존재한다. 또한 마지막으로 하나의 Fully connected layer로 최종 classifier가 나오게 된다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
