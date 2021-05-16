@@ -10,3 +10,5 @@
 ![image](https://user-images.githubusercontent.com/48700102/118393930-98c24300-b67c-11eb-8748-3ea098368a32.png)
 ![image](https://user-images.githubusercontent.com/48700102/118393950-b5f71180-b67c-11eb-967c-c88e5f8ce030.png)
 - Up-sampling의 한 방법 : Un-pooling, Max Unpooling
+- Max unpooling할때, 어느 부분에서 Max pooling step이 이루어졌는지 저장하고, Max unpooling때 retrieve하게 된다.
+- 
