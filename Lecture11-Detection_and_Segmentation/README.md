@@ -23,4 +23,4 @@
 
 - Up-sampling의 한 방법 : Un-pooling, Max Unpooling
 - Max unpooling할때, 어느 부분에서 Max pooling step이 이루어졌는지 저장하고, Max unpooling때 retrieve하게 된다.
-- 
+
