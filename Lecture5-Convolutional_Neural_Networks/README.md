@@ -21,6 +21,7 @@
 <br>
 <img src="https://user-images.githubusercontent.com/48700102/118392252-9e675b00-b673-11eb-867d-b11bb0b80e0f.png" width="50%">
 <br>
+
 - padding P, stride S, kernel size K가 Convolutional filter가 정해지고, input data 가 H*W 로 구성될때, output data는 ((H-K+2*P)/S+1)*((W-K+2*P)/S+1)로 구성되게 된다.
 <br>
 <img src="https://user-images.githubusercontent.com/48700102/118392330-1e8dc080-b674-11eb-822b-185d9554f33f.png" width="50%">
