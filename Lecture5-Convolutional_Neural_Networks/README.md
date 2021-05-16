@@ -27,7 +27,7 @@
 <img src="https://user-images.githubusercontent.com/48700102/118392330-1e8dc080-b674-11eb-822b-185d9554f33f.png" width="50%">
 <br>
 
-- 1*1 convolutional filter의 중요성 : 1*1 convolutional filter를 사용하게 되면 모든 spatial data를 순회하면서, 차원수를 줄여주는 일종의 abstraction을 적용시킬 수 있다.
+- 1\*1 convolutional filter의 중요성 : 1\*1 convolutional filter를 사용하게 되면 모든 spatial data를 순회하면서, 차원수를 줄여주는 일종의 abstraction을 적용시킬 수 있다.
 <br><br><br><br><br>
 
 ## brain/neuron view of Conv layer
