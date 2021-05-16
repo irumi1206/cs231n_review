@@ -15,11 +15,18 @@
 - 실제로 Convolutional Neural Network를 구성할때, convolutional filter를 stacking한 ConvNet, 그 다음에 진행 되는 Activation Function이 여러개 쌓여져 있고, 마지막으로, fully connected layer로 구성되어 있다.
 <br><br><br><br><br>
 
-## Convolutional filter
-- 
+## Convolutional filter dimension
+- stride : convolutional filter이 진행할때, 옆으로 몇칸씩 이동할지 결정하는 값
+- padding : convolutional filter를 진행 하게될때, border data에 대해서는 다른 중앙 data들에 비해서 convolutional filter가 거치는 정도가 낮아지는 형평성의 문제가 발생하거나 convolutional filter를 거친 output data의 size를 조정하기 위해, data 주변으로 추가 data를 추가해서 convolutional filter를 적용시키는데, 이때 주변으로 몇칸을 추가하는지 결정하는 값
+<br>
+<img src="https://user-images.githubusercontent.com/48700102/118392252-9e675b00-b673-11eb-867d-b11bb0b80e0f.png" width="50%">
+<br>
+- padding P, stride S, kernel size K가 Convolutional filter가 정해지고, input data 가 H*W 로 구성될때, output data는 ((H-K+2*P)/S+1)*((W-K+2*P)/S+1)로 구성되게 된다.
+<br>
+<img src="https://user-images.githubusercontent.com/48700102/118392330-1e8dc080-b674-11eb-822b-185d9554f33f.png" width="50%">
+<br>
 
-
-
+- 1*1 convolutional filter의 중요성 : 1*1 convolutional filter를 사용하게 되면 모든 spatial data를 순회하면서, 차원수를 줄여주는 일종의 abstraction을 적용시킬 수 있다.
 
 
 
