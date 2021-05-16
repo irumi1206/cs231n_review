@@ -6,7 +6,7 @@
 <img src="https://user-images.githubusercontent.com/48700102/118361547-f2683600-b5c6-11eb-96d1-d4f3a54f1932.png" width="50%">
 <br>
 
-- filter 를 이미지를 따라서 진행하면서 새로운 크기의 data 를 만든다. filter 의 수에 따라서 새로운 data 의 차원수를 조정할 수 있음 ex) 3*32*32->6*28*28 using 6 5*5*3 filter
+- filter 를 이미지를 따라서 진행하면서 새로운 크기의 data 를 만든다. filter 의 수에 따라서 새로운 data 의 차원수를 조정할 수 있음 ex) 3\*32\*32->6\*28\*28 using 6 5\*5\*3 filter
 - 이러한 convolutional layer 를 stacking하면 할수록, 보다 더 high-level feature 에 대해서 학습을 진행함.
 <br>
 <img src="https://user-images.githubusercontent.com/48700102/118392060-76c3c300-b672-11eb-9520-e8c3b208817c.png" width="50%">
