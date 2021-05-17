@@ -29,18 +29,51 @@
 
 - 학습가능한 up-sampling layer를 만드는 방법 : transpose convolution
 - transpose convolution : convolution operation의 반대로 계산하면서 up sampling을 함. 기존의 convolution에서는 filter를 이용해서 dot product를 했다면, de-convolution operation에서는 input data 를 하나의 filter size data로 변환, output data에 덮어씌움.
-
+<br><br><br><br><br>
 
 # Localization
 <br>
 <img src="https://user-images.githubusercontent.com/48700102/118436649-22751d80-b71c-11eb-9b35-d94505f1a37c.png" width="50%">
 <br>
 
+- Localization : image classification과 더불어, image 가 차지하는 부분을 특정함.
 - 기존의 image classification task 과 유사하게, 4096-> 4 의 fully connected layer로 마지막 layer를 구성해 x,y,w,h 를 도출하게 함.
+<br><br><br><br><br>
 
+# Detection
+<br>
+<img src="https://user-images.githubusercontent.com/48700102/118437600-e2169f00-b71d-11eb-90b8-66b5de6f27f8.png" width="50%">
+<br>
 
+- Detection : image 안에 '여러개'의 물체에 대한 차지하는 부분과 각각의 image classification을 진행
+- vs classification + Localization : 하나의 image안에 여러개의 이미지가 들어 있으며, 정확히 몇개가 있는지는 모름
+<br>
+<img src="https://user-images.githubusercontent.com/48700102/118437669-02def480-b71e-11eb-9932-ffa0cee29dd5.png" width="50%">
+<br>
 
+- Sliding Window : window를 이미지에 걸쳐서 진행하면서, crop들을 CNN에 통과, image classification을 진행
+- Problem : how to choose crop?, 매우 많은 crop 을 생성해야함
+<br>
+<img src="https://user-images.githubusercontent.com/48700102/118437837-45a0cc80-b71e-11eb-9bf0-564c1fb149d8.png" width="50%">
+<br>
 
+- Region Proposals(traditional vision technique) : blobby image를 찾아서 image가 될법한 범위를 탐색, CNN에 통과
+<br>
+<img src="https://user-images.githubusercontent.com/48700102/118438770-d75d0980-b71f-11eb-8219-17e7958a1a9b.png" width="50%">
+<br>
+
+- R-CNN 논문이 Region Proposal를 이용해서 Detection을 진행. region propasal->image size reconstructoin-> SVM loss+Bbox reg
+- R-CNN 문제점 : computationally expensive, slow training, take up alot of disk space
+<br>
+<img src="https://user-images.githubusercontent.com/48700102/118438809-e5128f00-b71f-11eb-8e0f-70adf183170d.png" width="50%">
+<br>
+
+- Fast R-CNN : image 자체에서 crop을 뽑는것이 아닌, image 를 ConvNet을 통과시키고, feature map에서 crop(region proposal)을 진행
+<br>
+<img src="https://user-images.githubusercontent.com/48700102/118438945-168b5a80-b720-11eb-965a-2f0ef9b86871.png" width="50%">
+<br>
+
+- Faster R-CNN : crop을 뽑을때, traditional한 방법이아닌, CNN자체가 proposal을 할 수 있도록 설계
 
 
 
