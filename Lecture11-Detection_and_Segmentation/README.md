@@ -75,7 +75,7 @@
 
 - Faster R-CNN : crop을 뽑을때, traditional한 방법이아닌, CNN자체가 proposal을 할 수 있도록 설계
 <br><br>
-- YOLO/SSD : 하나의 이미지 자체를 regression 모델로 예측, 개별로 추측 안함.
+- Other detection models-YOLO/SSD : 하나의 이미지 자체를 regression 모델로 예측, 개별로 추측 안함.
 <br><br><br><br><br>
 
 
