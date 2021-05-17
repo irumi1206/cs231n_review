@@ -23,4 +23,26 @@
 
 - Up-sampling의 한 방법 : Un-pooling, Max Unpooling
 - Max unpooling할때, 어느 부분에서 Max pooling step이 이루어졌는지 저장하고, Max unpooling때 retrieve하게 된다.
+<br>
+<img src="https://user-images.githubusercontent.com/48700102/118436073-150b6380-b71b-11eb-8f5c-24b64acbada8.png" width="50%">
+<br>
+
+- 학습가능한 up-sampling layer를 만드는 방법 : transpose convolution
+- transpose convolution : convolution operation의 반대로 계산하면서 up sampling을 함. 기존의 convolution에서는 filter를 이용해서 dot product를 했다면, de-convolution operation에서는 input data 를 하나의 filter size data로 변환, output data에 덮어씌움.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
