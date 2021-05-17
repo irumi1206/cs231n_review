@@ -31,6 +31,13 @@
 - transpose convolution : convolution operation의 반대로 계산하면서 up sampling을 함. 기존의 convolution에서는 filter를 이용해서 dot product를 했다면, de-convolution operation에서는 input data 를 하나의 filter size data로 변환, output data에 덮어씌움.
 
 
+# Localization
+<br>
+<img src="https://user-images.githubusercontent.com/48700102/118436649-22751d80-b71c-11eb-9b35-d94505f1a37c.png" width="50%">
+<br>
+
+- 기존의 image classification task 과 유사하게, 4096-> 4 의 fully connected layer로 마지막 layer를 구성해 x,y,w,h 를 도출하게 함.
+
 
 
 
