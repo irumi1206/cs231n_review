@@ -14,12 +14,26 @@
 
 ## Weight Initialization
 - random initialization : 작은 네트워크에서는 잘 작동하지만, deep network에서는 잘 작동안함
-
+- Xavier initialization : 수학적으로 맞는 initialization, layer를 따라서 진행할떄, gradient descent가 일어나지 않음
+- proper initialization은 아직 진행중인 연구 과제
 
 ## Batch Normalization
-
+- batch normalization은 대체로 fully connected layer 앞에, activation function 전에 위치
+- batch normalization에서 확장해서, normalize후에 특정 computation을 하도록 지정할 수도 있음, 이떄 computation에 쓰는 변수들을 learnable weight
 
 ## Babysitting the Learning Process
-
+- how to monitor deep learning
+- 1) checking loss is reasonalbe
+- 2) check if training loss converge to small value while training
+- 3) start with small regularization, and find the learning rate that makes loss go down
+- 4) if loss not going down-> learning rate is too low
+- 5) loss exploding-> learning rate is too high
 
 ## Hyperparameter Optimization
+- cross- validation : evaluating on validation set, measure accurac in test set
+- first few epoch to what paramater makes mean in deep learning, than longer running time, fine search
+- in cross validation, if certain loss is far less than other loss, it is worrying to use certain model, because it may be due to data.
+- network architectrue, learning rate, decay schdule, update type, regularization -> hyper parameters
+- if big gap between training accuracy and testing accuracy -> beware of overfitting
+
+
